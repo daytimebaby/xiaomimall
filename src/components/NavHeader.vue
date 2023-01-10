@@ -9,8 +9,8 @@
                     <a href="javascript:;">协议规则</a>
                 </div>
                 <div class="tobar-user">
-                    <a href="javascript:;">登陆</a>
-                    <a href="javascript:;">注册</a>
+                    <a href="/login">登陆</a>
+                    <a href="/login">注册</a>
                     <a href="javascript:;" class="myCart"><span class="icon-cart"></span>购物车（0）</a>
                 </div>
             </div>
@@ -261,7 +261,7 @@ export default {
                         border-top: 1px solid #e5e5e5;
                         box-shadow: 0px 7px 6px 0px rgba(0, 0, 0, 0.11);
                         transition: all 0.5s;
-                        z-index: 10;
+                        z-index: 20;
 
                         ul {
                             .product {

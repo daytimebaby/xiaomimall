@@ -1,6 +1,6 @@
 <template>
     <div class="product">
-        <div class="nav-bar">
+        <!-- <div class="nav-bar">
             <div class="container">
                 <div class="pro-title">小米8</div>
                 <div class="param">
@@ -12,7 +12,10 @@
                     <a href="javascript:;" class="btn">立即购买</a>
                 </div>
             </div>
-        </div>
+        </div> -->
+        <productParam>
+
+        </productParam>
         <div class="content">
             <div class="item-bg">
                 <h2>小米cc9</h2>
@@ -76,6 +79,7 @@
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
+import productParam from './../components/ProductParam.vue'
 export default {
     name: 'product',
     data() {
@@ -97,7 +101,8 @@ export default {
     components: {
 
         swiper,
-        swiperSlide
+        swiperSlide,
+        productParam
     }
     , methods: {
         closeVideo() {
@@ -117,57 +122,57 @@ export default {
 @import './../assets/scss/config.scss';
 
 .product {
-    .nav-bar {
-        border-top: 1px solid #e5e5e5;
+    // .nav-bar {
+    //     border-top: 1px solid #e5e5e5;
 
-        .container {
-            display: flex;
-            width: 1226px;
-            height: 70px;
-            line-height: 70px;
-            margin-left: auto;
-            margin-right: auto;
-            justify-content: space-between;
-            align-items: center;
+    //     .container {
+    //         display: flex;
+    //         width: 1226px;
+    //         height: 70px;
+    //         line-height: 70px;
+    //         margin-left: auto;
+    //         margin-right: auto;
+    //         justify-content: space-between;
+    //         align-items: center;
 
-            .pro-title {
-                display: inline-block;
-                color: black;
-                font-size: 18px;
-                font-weight: bold;
-            }
+    //         .pro-title {
+    //             display: inline-block;
+    //             color: black;
+    //             font-size: 18px;
+    //             font-weight: bold;
+    //         }
 
-            .param {
-                display: inline-block;
+    //         .param {
+    //             display: inline-block;
 
-                a {
-                    font-size: 14px;
-                    font-weight: bold;
-                    color: #666;
-                }
+    //             a {
+    //                 font-size: 14px;
+    //                 font-weight: bold;
+    //                 color: #666;
+    //             }
 
-                span {
-                    margin: 0px 10px;
-                }
+    //             span {
+    //                 margin: 0px 10px;
+    //             }
 
-                .btn {
-                    font-weight: normal;
-                    margin-left: 10px;
-                    display: inline-block;
-                    width: 110px;
-                    height: 30px;
-                    line-height: 30px;
-                    text-align: center;
-                    background-color: #FF6600;
-                    color: #ffffff;
-                    border: none;
-                    cursor: pointer;
+    //             .btn {
+    //                 font-weight: normal;
+    //                 margin-left: 10px;
+    //                 display: inline-block;
+    //                 width: 110px;
+    //                 height: 30px;
+    //                 line-height: 30px;
+    //                 text-align: center;
+    //                 background-color: #FF6600;
+    //                 color: #ffffff;
+    //                 border: none;
+    //                 cursor: pointer;
 
-                }
-            }
+    //             }
+    //         }
 
-        }
-    }
+    //     }
+    // }
 
     .content {
         .item-bg {
